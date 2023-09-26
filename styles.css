@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+:root{
+    --softOrange: hsl(35, 77%, 62%);
+    --softRed: hsl(5, 85%, 63%);
+    --offWhite: hsl(36, 100%, 99%);
+    --grayishBlue: hsl(233, 8%, 79%);
+    --darkGrayishBlue: hsl(236, 13%, 42%);
+    --veryDarkBlue: hsl(240, 100%, 5%);
+
+
+}
+
+*{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+
+body{
+    background-color: var(--offWhite);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    max-width: 1296px;
+    aspect-ratio: 16 / 9;
+    padding: 25px;
+}
+
+#pc{
+    display: flex;
+    height: min-content;
+    justify-content: space-between
+    
+}
+
+.logo{
+    width: 55px;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: left;
+
+  }
+  
+  li {
+    display: block;
+    color: var(--darkGrayishBlue);
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+  
+
+  #top{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #mobile{
+    display: none;
+  }
+
+  .left{
+    width: 800px;
+    height: 475px;
+    margin-top: 40px;
+    padding: 0;
+  }
+
+  #futureWeb{
+    width: 100%;
+    height: 50%;
+    object-fit:cover;
+  }
+
+  .text{
+    display: flex;
+  }
+
+  h1{
+    font-size: 3em;
+    margin: 0;
+    margin-top: 25px;
+    margin-right: 100px;
+    font-weight: 800;
+    color: var(--veryDarkBlue);
+
+  }
+
+  .callToAction{
+    width: 50%;
+  }
+
+  .callToAction p{
+    font-size: 18px;
+    color: var(--darkGrayishBlue);
+    font-weight: 400;
+    margin-top: 25px;
+  }
+
+  button{
+    padding: 12px 40px;
+    letter-spacing: 2px;
+    background-color: var(--softRed);
+    border: none;
+    margin-top: 25px;
+    color: var(--offWhite);
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  button:hover{
+    background-color: var(--veryDarkBlue);
+  }
+
+
+  aside{
+    background-color: var(--veryDarkBlue);
+    width: 450px;
+    height: 475px;
+    margin-top: 40px;
+    
+  }
+
+  aside h2{
+    color: var(--softOrange);
+    margin-left: 25px;
+    margin-top: 25px;
+    font-size: 32px;
+  }
+
+  article{
+    margin-left: 25px;
+  }
+
+  aside h3{
+    color: var(--offWhite);
+    margin: 0;
+    margin-top: 35px;
+  }
+  aside h3:hover{
+    color: var(--softOrange);
+    cursor: pointer;
+  }
+
+  .newNews p{
+    color: var(--darkGrayishBlue);
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 35px;
+    font-size: 15px;
+  }
+
+  hr{
+    height: 1px;
+    border: none;
+    background-color: var(--darkGrayishBlue);
+    width: 90%;
+  }
+
+  #bottom{
+    width: 100%;
+    height: fit-content;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+  .otherNews{
+    display: flex;
+    width: 30%;
+  }
+
+  .newsImg{
+    width: 100px;
+    margin-right: 25px;
+  }
+
+  .otherNews h3{
+    font-size: 30px;
+    color: var(--grayishBlue);
+  }
+  .otherNews h4{
+    color: var(--veryDarkBlue);
+    margin-top: 10px;
+
+    font-weight: 800;
+
+  }
+
+  .otherNews h4:hover{
+    color: var(--softOrange);
+    cursor: pointer;
+  }
+  .otherNews p {
+    margin-top: 10px;
+    color: var(--grayishBlue);
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: 425px) {
+        *{
+            overflow:none  !important;
+          
+          }
+
+        main{
+          width: 425px;
+          height: 100vh;
+          padding: 0;
+        }
+  
+        #top{
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            width: 425px;
+        }
+        .left, .text{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: min-content;
+        }
+
+        .left{
+          margin: 0;
+        }
+
+        #pc{
+          display: none;
+        }
+
+        #mobile{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          height: 100px;
+          padding: 0 20px;
+        }
+        
+
+
+        .text{
+          padding: 0 20px;
+        }
+
+        .text h1{
+          margin-top:25px;
+          width: 410px;
+        }
+        .text p{
+          width: 370px;
+        }
+
+        #bottom{
+          width: 425px;
+          padding-left: 20px;
+          overflow: hidden;
+          display: flex;
+          flex-direction: column;
+          gap: 25px;
+        }
+
+        .otherNews{
+          width: 100%;
+          margin-left: 0;
+        }
+
+        .otherNews:last-child{
+          margin-bottom: 50px;
+        }
+
+        aside{
+          width: fit-content;
+          margin: 50px 20px 0 20px;
+        }
+
+        #futureWeb{
+          width: 385px;
+          align-self: center; 
+          height: fit-content;
+          content: url("assets/images/image-web-3-mobile.jpg");
+        }
+
+        .newsImg{
+          float: left;
+          width:  100px;
+          height: 150px;
+          object-fit: cover;
+        }
+
+        #sideMenu{
+          position: absolute;
+          display: none;
+          width: 0%;
+          height: 100vh;
+          right: 0;
+          float: right;
+          transition: all 0.5s;
+        }
+
+        #rightSide{
+          position: absolute;
+          width: 60%;
+          height: 100vh;
+          background-color: var(--offWhite);
+          right: 0;
+          z-index: 100;
+        }
+
+        #menuClose{
+          display: flex;
+          justify-content: flex-end;
+          padding-top: 25px;
+          padding-right: 15px;
+        }
+
+        #overlay{
+          position: absolute;
+          width: 100vw;
+          height: 100vh;
+          background-color: #00000055
+        }
+
+
+        #menu{
+          display: flex !important;
+          flex-direction: column !important;
+          height: fit-content !important;
+          margin-top: 100px;
+        }
+
+        #menu ul {
+          height: 600px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          margin-left: 0;
+      }
+      
+        #menu ul li {
+          height: 10px;
+          display: flex;
+          align-items: center !important;
+          color: var(--veryDarkBlue);
+          font-weight: 500;
+        }
+        
+    }

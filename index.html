@@ -7,54 +7,113 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | News homepage</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="script.js"></script>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  Home
-  New
-  Popular
-  Trending
-  Categories
+    <main>
 
-  The Bright Future of Web 3.0?
+      <header id="pc">
+        <img class="logo" src="assets/images/logo.svg" alt="">
+        <nav>
+          <ul>
+            <li>Home</li>
+            <li>News</li>
+            <li>Popular</li>
+            <li>Trending</li>
+            <li>Categories</li>
+          </ul>
+        </nav>
+      </header>
 
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
+      <header id="mobile">
+        <img class="logo" src="assets/images/logo.svg" alt="">
+        <img id="menuOpen" src="assets/images/icon-menu.svg" alt="">
+      </header>
+      <section id="top">
+          <div class="left">
+            <img src="assets/images/image-web-3-desktop.jpg" alt="" id="futureWeb">
+            <section class="text">
+              <h1>  The Bright Future of Web 3.0?</h1>
+              <section class="callToAction">
+                <p>
+                  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+                  But is it really fulfilling its promise?
+                </p>
+                <button>READ MORE</button>
+              </section>
+            </section>
+          </div>
+          <aside>
+            <h2 id="new">New</h2>
+            <article class="newNews">
+              <h3>Hydrogen VS Electric Cars</h3>
+              <p>  Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </article>
+            <hr>
+            <article class="newNews">
+              <h3>The Downsides of AI Artistry</h3>
+              <p>What are the possible adverse effects of on-demand AI image generation?</p>
+            </article >
+            <hr>
 
-  Read more
+            <article class="newNews">
+              <h3>Is VC Funding Drying Up?</h3>
+              <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+            </article>
+          </aside>
+      </section>
+      <section id="bottom">
+        <article class="otherNews">
+          <img class="newsImg"src="assets/images/image-retro-pcs.jpg" alt="">
+          <div>
+            <h3>01</h3>
+            <h4>Reviving Retro PCs</h4>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </article><article class="otherNews">
+          <img class="newsImg"src="assets\images\image-top-laptops.jpg" alt="">
+          <div>
+            <h3>02</h3>
+            <h4>Top 10 Laptops of 2022</h4>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
+        </article><article class="otherNews">
+          <img class="newsImg"src="assets\images\image-gaming-growth.jpg" alt="">
+          <div>
+            <h3>03</h3>
+            <h4>The Growth of Gaming</h4>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </article>
+      </section>
 
-  New 
+    </main>
+ 
+    <section id="sideMenu">
+      <div id="rightSide">
+        <div id="menuClose">
+          <img src="assets/images/icon-menu-close.svg" alt="">
 
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
+        </div>
 
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
+        <div id="menu">
+          <ul>
+            <li>Home</li>
+            <li>News</li>
+            <li>Popular</li>
+            <li>Trending</li>
+            <li>Categories</li>
+          </ul>
+        </div>
 
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
-
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
-
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
-
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
+      </div>
+      <div id="overlay"></div>
+    </section>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+
 </body>
 </html>
