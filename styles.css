@@ -38,6 +38,11 @@ main{
     
 }
 
+#sideMenu{
+  display: none;
+}
+
+
 .logo{
     width: 55px;
     height: 40px;
